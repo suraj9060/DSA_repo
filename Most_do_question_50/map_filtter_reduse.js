@@ -13,7 +13,6 @@ let arr = [1, 2, 3, 4 ,2]
 //     for (let i = 0; i < this.length; i++){
 //         temp.push(cb(this[i] , i , this))
 //     }
-
 //     return temp
 // }
 
@@ -29,27 +28,22 @@ let arr = [1, 2, 3, 4 ,2]
 
 // Array.prototype.myFilter = function (cb) {
 //     let temp = []
-
 //     for (let i = 0; i < this.length; i++){
 //         if (cb(this[i], i, this)) temp.push(this[i])
-        
 //     }
 //     return temp
 // }
 
+
 // let filter2 = arr.myFilter(e => e > 2)
 // console.log(filter2)
-
-
 // // reduse method
 
 // //reduce(acc , current value , index , array)
-
 // let sum = arr.reduce((acc, ele) => {
 //     return acc + ele
 // }, 0)
 // console.log(sum)
-
 // // polyfill for value
 
 // Array.prototype.myReduce = function (cb, initalValue) {
@@ -58,9 +52,7 @@ let arr = [1, 2, 3, 4 ,2]
 //     for (let i = 0; i < this.length; i++){
 //         acc = acc ? cb(acc , this[i] , i , this) : this[i]
 //     }
-
 //     return acc
-
 // }
 
 // let sum2 = arr.myReduce((acc, ele) => {
@@ -68,18 +60,20 @@ let arr = [1, 2, 3, 4 ,2]
 // })
 // console.log(sum2)
 
-Array.prototype.myreduce = function (cb , initialValue) {
-    let acc = initialValue
+// Array.prototype.myreduce = function (cb , initialValue) {
+//     let acc = initialValue
 
-    for (let i = 0; i < this.length; i++){
-        acc = acc ? cb(acc , this[i] , i , this) : this[i]
-    }
+//     for (let i = 0; i < this.length; i++){
+//         acc = acc ? cb(acc , this[i] , i , this) : this[i]
+//     }
 
-    return acc
-}
+//     return acc
+// }
 
-let outptu = arr.myreduce((acc, initialvalue)=> acc+initialvalue)
-console.log(outptu)
+// let outptu = arr.myreduce((acc, initialvalue)=> acc+initialvalue)
+// console.log(outptu)
+
+
 
 
 

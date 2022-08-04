@@ -14,3 +14,5 @@ for (let i = 0; i < arr.length; i++){
     }
 }
 
+let ans = [...new Set(arr)]
+console.log(ans)
